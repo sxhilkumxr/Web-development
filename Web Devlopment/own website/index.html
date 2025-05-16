@@ -1,0 +1,1366 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+     <title>Richa Mobile Repairing</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- {headerScripts} -->
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+      <!-- {bodyScripts} -->
+
+   </body>
+</html><element id="8c6ad707-7680-4291-b8e0-811701696b1c" data-section-id="8c6ad707-7680-4291-b8e0-811701696b1c">
+
+<htmlCode>
+<div id="root">
+  <nav id="navbar" class="bg-neutral-900 text-white fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+         <img src="./shop logo.jpg" alt="" style="height:55px; border-radius:50%;">
+        <div class="flex-shrink-0 animate__animated animate__fadeIn">
+          <span class="text-xl font-bold">RICHA MOBILE REPAIRING</span>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="#hero" class="hover:text-gray-300 px-3 py-2 rounded-md">Home</a>
+            <a href="#services" class="hover:text-gray-300 px-3 py-2 rounded-md">Services</a>
+            <a href="#whyChooseUs" class="hover:text-gray-300 px-3 py-2 rounded-md">Why Us</a>
+            <a href="#pricing" class="hover:text-gray-300 px-3 py-2 rounded-md">Pricing</a>
+            <a href="#location" class="hover:text-gray-300 px-3 py-2 rounded-md">Location</a>
+            <a href="#testimonials" class="hover:text-gray-300 px-3 py-2 rounded-md">Reviews</a>
+            <a href="#contact" class="hover:text-gray-300 px-3 py-2 rounded-md">Contact</a>
+          </div>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md hover:text-gray-300 focus:outline-none">
+            <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+              <path class="block" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-neutral-800">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#hero" class="block px-3 py-2 rounded-md hover:text-gray-300">Home</a>
+        <a href="#services" class="block px-3 py-2 rounded-md hover:text-gray-300">Services</a>
+        <a href="#whyChooseUs" class="block px-3 py-2 rounded-md hover:text-gray-300">Why Us</a>
+        <a href="#pricing" class="block px-3 py-2 rounded-md hover:text-gray-300">Pricing</a>
+        <a href="#location" class="block px-3 py-2 rounded-md hover:text-gray-300">Location</a>
+        <a href="#testimonials" class="block px-3 py-2 rounded-md hover:text-gray-300">Reviews</a>
+        <a href="#contact" class="block px-3 py-2 rounded-md hover:text-gray-300">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking a link
+    const mobileLinks = mobileMenu.getElementsByTagName('a');
+    for (let link of mobileLinks) {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    }
+
+    // Close mobile menu on window resize
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 768) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  </script>
+</div>
+</htmlCode></element><element id="bd6bbf6b-039d-467f-a544-ecdc1c1182ad" data-section-id="bd6bbf6b-039d-467f-a544-ecdc1c1182ad">
+
+
+                
+                <htmlcode id="el-57clac0e">
+<div id="root">
+  <section id="hero" class="bg-gradient-to-br from-gray-900 to-gray-800 text-white pt-16 min-h-[70vh] overflow-hidden">
+    <div class="container mx-auto px-4 py-20" id="el-g1zt1wl7">
+        <div class="flex flex-col md:flex-row items-center justify-between" id="el-9ueev90s">
+            <div class="md:w-1/2 mb-10 md:mb-0" id="el-63rrgxer">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-slide-up opacity-0" style="--delay: 0.2s; font-family: Caveat, system-ui, sans-serif;" id="el-r6s58x3a">
+                 RICHA MOBILE <br id="el-x0r2mssn"><span class="text-blue-400" id="el-pb677e8z">REPAIRING</span>
+                </h1>
+                <p class="text-xl mb-8 text-gray-300 animate-slide-up opacity-0" style="--delay: 0.5s" id="el-2gywi7xf">
+                    Professional mobile repair services with expert technicians and cutting-edge technology
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 animate-slide-up opacity-0" style="--delay: 0.8s" id="el-xkbri75z">
+                    <a href="https://wa.me/+919661838548" class="inline-flex items-center px-6 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition-all transform hover:scale-105" id="el-v40663g6">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" id="el-igfwdd4z">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" id="el-qo92t08a"></path>
+                        </svg>
+                        WhatsApp Us
+                    </a>
+                    <a href="https://maps.app.goo.gl/BhYfsc3bJF4Z5WXF9" target="_blank" class="inline-flex items-center px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-all transform hover:scale-105" id="el-wd7l6vk8">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" id="el-y89qdjzz">
+                            <path d="M12 0C7.802 0 4 3.403 4 7.602 4 11.8 7.469 16.812 12 24c4.531-7.188 8-12.2 8-16.398C20 3.403 16.199 0 12 0zm0 11a3 3 0 110-6 3 3 0 010 6z" id="el-yu3wxz1d"></path>
+                        </svg>
+                        Bakerganj
+                    </a>
+                    <a href="https://maps.app.goo.gl/XbdabaUyK1y6MLK8A" target="_blank" class="inline-flex items-center px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-all transform hover:scale-105" id="el-wd7l6vk8">
+                      <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" id="el-y89qdjzz">
+                          <path d="M12 0C7.802 0 4 3.403 4 7.602 4 11.8 7.469 16.812 12 24c4.531-7.188 8-12.2 8-16.398C20 3.403 16.199 0 12 0zm0 11a3 3 0 110-6 3 3 0 010 6z" id="el-yu3wxz1d"></path>
+                      </svg>
+                      Jaganpura
+                  </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 animate-float relative" id="el-ql5m1p0l">
+                <div class="absolute -top-20 -right-20 w-40 h-40 bg-blue-500 rounded-full filter blur-3xl opacity-20 animate-pulse" id="el-u1wozabs"></div>
+                <div class="absolute -bottom-20 -left-20 w-40 h-40 bg-green-500 rounded-full filter blur-3xl opacity-20 animate-pulse" id="el-qxonl0vl"></div>
+                <div class="relative bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-700 backdrop-blur-lg" id="el-utt2z4u5">
+                    <div class="absolute -top-6 -right-6 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center animate-spin-slow" id="el-ktuj9g3r">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-afpx05qd">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" id="el-ui10828l"></path>
+                        </svg>
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 w-8 h-8 bg-green-500 rounded-lg rotate-45" id="el-dd1sxbba"></div>
+                    <div class="space-y-6" id="el-lj3becar">
+                        <div class="flex items-center gap-4 mb-6" id="el-pu7pt54u">
+                            <span class="w-12 h-12 rounded-xl bg-blue-500 flex items-center justify-center text-white" id="el-1bcgfrzj">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-074pkmlz">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" id="el-fs9v5mp2"></path>
+                                </svg>
+                            </span>
+                            <h3 class="text-2xl font-bold" id="el-fx64majv">Expert Repairs</h3>
+                        </div>
+                        <div class="animate-pulse-subtle" id="el-2hkrclf5">
+                            <div class="flex items-center gap-3 bg-gray-700/50 p-3 rounded-lg" id="el-jhj4fij6">
+                                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20" id="el-ucpzx8es">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" id="el-21rz3veu"></path>
+                                </svg>
+                                <span id="el-bh5z1k31">Screen Repairs</span>
+                            </div>
+                        </div>
+                        <div class="animate-pulse-subtle" style="animation-delay: 0.2s" id="el-exbg961m">
+                            <div class="flex items-center gap-3 bg-gray-700/50 p-3 rounded-lg" id="el-kg33ow8y">
+                                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20" id="el-0ohzt83h">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" id="el-zszbf9e8"></path>
+                                </svg>
+                                <span id="el-hiy0kpsp">Cutting & Punching</span>
+                            </div>
+                        </div>
+                        <div class="animate-pulse-subtle" style="animation-delay: 0.4s" id="el-jkth26in">
+                            <div class="flex items-center gap-3 bg-gray-700/50 p-3 rounded-lg" id="el-3ttnn8zx">
+                                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20" id="el-f3uk5lwc">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" id="el-mnkuio6b"></path>
+                                </svg>
+                                <span id="el-n1173qu3">Software Issues</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        @keyframes pulseSubtle {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+        }
+
+        @keyframes spin-slow {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .animate-slide-up {
+            animation: slideUp 0.6s ease-out forwards;
+            animation-delay: var(--delay, 0s);
+        }
+        
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .animate-pulse-subtle {
+            animation: pulseSubtle 2s ease-in-out infinite;
+        }
+
+        .animate-spin-slow {
+            animation: spin-slow 10s linear infinite;
+        }
+    </style>
+</section>
+</div>
+</htmlcode>
+              
+              </element><element id="8bfb5e8c-fa00-4e0d-b16e-d073d4610669" data-section-id="8bfb5e8c-fa00-4e0d-b16e-d073d4610669">
+
+<htmlCode>
+<div id="root">
+  <section id="services" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold mb-4">Our Services</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Professional mobile repair services for all major brands and models</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service Card 1 -->
+        <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp">
+          <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Screen Replacement</h3>
+          <p class="text-gray-600 mb-4">Expert screen replacement service for cracked or damaged displays with genuine parts</p>
+          <ul class="text-gray-600 space-y-2">
+            <li>✓ High quality display</li>
+            <li>✓ 30-day warranty</li>
+            <li>✓ Same day service</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Full Phone Restoration</h3>
+          <p class="text-gray-600 mb-4">Restore your phone's life with high-quality parts</p>
+          <ul class="text-gray-600 space-y-2">
+            <li>✓ Genuine parts</li>
+            <li>✓ Quick installation</li>
+            <li>✓ phone health check</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Water Damage Repair</h3>
+          <p class="text-gray-600 mb-4">Professional water damage treatment and repair services</p>
+          <ul class="text-gray-600 space-y-2">
+            <li>✓ Ultrasonic cleaning</li>
+            <li>✓ Component repair</li>
+            <li>✓ Data recovery</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp">
+          <div class="bg-red-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Hardware Repairs</h3>
+          <p class="text-gray-600 mb-4">Fix any hardware issues including camera, speaker, and charging port</p>
+          <ul class="text-gray-600 space-y-2">
+            <li>✓ Component level repair</li>
+            <li>✓ Quality testing</li>
+            <li>✓ Quick repair</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="bg-yellow-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Software Issues</h3>
+          <p class="text-gray-600 mb-4">Resolve software problems, updates, and data recovery services</p>
+          <ul class="text-gray-600 space-y-2">
+            <li>✓ OS updates</li>
+            <li>✓ Virus removal</li>
+            <li>✓ Performance optimization</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="bg-pink-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Accessories & Protection</h3>
+          <p class="text-gray-600 mb-4">Quality accessories and protection solutions for your device</p>
+          <ul class="text-gray-600 space-y-2">
+            <li>✓ Screen protectors</li>
+            <li>✓ Phone cases</li>
+            <li>✓ Charging accessories</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="3127941e-ee40-4b17-9f44-14db5bfb887e" data-section-id="3127941e-ee40-4b17-9f44-14db5bfb887e">
+
+
+                <htmlcode id="el-kycpjezg">
+<div id="root">
+  <section id="whyChooseUs" class="py-20 bg-neutral-900 text-white">
+    <div class="container mx-auto px-4" id="el-li8lwz5t">
+      <div class="text-center mb-16 animate__animated animate__fadeIn" id="el-89bvgigk">
+        <h2 class="text-4xl font-bold mb-4" id="el-qu5e9r9z">Why Choose Us</h2>
+        <p class="text-gray-300 max-w-2xl mx-auto" id="el-t91b4abd">Experience the difference with our professional mobile repair service</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="el-zv7n45sn">
+        <!-- Reason 1 -->
+        <div class="bg-neutral-800 rounded-lg p-6 transform hover:-translate-y-2 transition-transform duration-300 animate__animated animate__fadeInUp" id="el-7lq7qhps">
+          <div class="mb-4" id="el-xw9f4uwt">
+            <span class="text-blue-500 text-4xl" id="el-libmq3kg">
+              <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-uve9wdgc">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" id="el-nxyxcjnx"></path>
+              </svg>
+            </span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" id="el-59vvmkhb">Quick Turnaround</h3>
+          <p class="text-gray-400" id="el-ovxc1sl1">Most repairs completed within 1-2 hours. We value your time and ensure swift service.</p>
+        </div>
+
+        <!-- Reason 2 -->
+        <div class="bg-neutral-800 rounded-lg p-6 transform hover:-translate-y-2 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-1s" id="el-r2fbetom">
+          <div class="mb-4" id="el-zlt9df7h">
+            <span class="text-green-500 text-4xl" id="el-39tz9szh">
+              <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-9la2n3ba">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" id="el-0xh9szx5"></path>
+              </svg>
+            </span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" id="el-rx9kxgh5">Cutting & Punching Expert</h3>
+          <p class="text-gray-400" id="el-d9qsgevd">We have experience of 10+ years in cutting and punching displays and even shop owners prefer our work for best quality</p>
+        </div>
+
+        <!-- Reason 3 -->
+        <div class="bg-neutral-800 rounded-lg p-6 transform hover:-translate-y-2 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-2s" id="el-t8s45bsm">
+          <div class="mb-4" id="el-a31l8m1z">
+            <span class="text-yellow-500 text-4xl" id="el-aguutbj5">
+              <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-m5dmnw3l">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" id="el-llkmntre"></path>
+              </svg>
+            </span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" id="el-tfuzlffa">Expert Technicians</h3>
+          <p class="text-gray-400" id="el-i61sefer">Our certified technicians have years of experience in mobile repair services.</p>
+        </div>
+
+        <!-- Reason 4 -->
+        <div class="bg-neutral-800 rounded-lg p-6 transform hover:-translate-y-2 transition-transform duration-300 animate__animated animate__fadeInUp" id="el-1zokgc9w">
+          <div class="mb-4" id="el-oiqq5lpc">
+            <span class="text-purple-500 text-4xl" id="el-u9p3j8p6">
+              <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-344fdots">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" id="el-ujgtca5x"></path>
+              </svg>
+            </span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" id="el-5qig8v7f">Competitive Pricing</h3>
+          <p class="text-gray-400" id="el-sifo7rto">Best quality repairs at reasonable prices. No hidden charges ever.</p>
+        </div>
+
+        <!-- Reason 5 -->
+        <div class="bg-neutral-800 rounded-lg p-6 transform hover:-translate-y-2 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-1s" id="el-hviirkvu">
+          <div class="mb-4" id="el-g9jmgnzo">
+            <span class="text-red-500 text-4xl" id="el-h7bdj417">
+              <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-numjwz3j">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" id="el-1viz2vuz"></path>
+              </svg>
+            </span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" id="el-sz4zva7i">Genuine Parts</h3>
+          <p class="text-gray-400" id="el-zrkjbqig">We only use high-quality, authentic parts for all repairs and replacements.</p>
+        </div>
+
+        <!-- Reason 6 -->
+        <div class="bg-neutral-800 rounded-lg p-6 transform hover:-translate-y-2 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-2s" id="el-s7v33zwa">
+          <div class="mb-4" id="el-621nchuo">
+            <span class="text-pink-500 text-4xl" id="el-b266jy74">
+              <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-85ebxurn">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" id="el-oeo6y86r"></path>
+              </svg>
+            </span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" id="el-hg1jeqpq">Free Consultation</h3>
+          <p class="text-gray-400" id="el-ebugkg0t">Get free diagnosis and repair estimates before proceeding with any service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlcode>
+              </element><element id="4b62a4aa-7652-4cb8-8a01-ec2fa22fc563" data-section-id="4b62a4aa-7652-4cb8-8a01-ec2fa22fc563">
+
+<htmlCode>
+<div id="root">
+  <section id="pricing" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold mb-4">Our Pricing</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Transparent pricing for common repair services</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Basic Repairs -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden animate__animated animate__fadeInUp">
+          <div class="bg-blue-600 text-white p-6 text-center">
+            <h3 class="text-2xl font-bold">Basic Repairs</h3>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center border-b pb-4">
+                <span>Screen Protector Installation</span>
+                <span class="font-bold">₹80</span>
+              </li>
+              <li class="flex justify-between items-center border-b pb-4">
+                <span>Software Update</span>
+                <span class="font-bold">₹150</span>
+              </li>
+              <li class="flex justify-between items-center border-b pb-4">
+                <span>Charging Port Cleaning</span>
+                <span class="font-bold">₹100</span>
+              </li>
+              <li class="flex justify-between items-center border-b pb-4">
+                <span>Basic Diagnostics</span>
+                <span class="font-bold">Free</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Standard Repairs -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform scale-105 animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="bg-green-600 text-white p-6 text-center">
+            <h3 class="text-2xl font-bold">Standard Repairs</h3>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center border-b pb-4">
+                <span>Battery Replacement</span>
+                <span class="font-bold">₹500+</span>
+              </li>
+              <li class="flex justify-between items-center border-b pb-4">
+                <span>Display Replacement</span>
+                <span class="font-bold">₹500+</span>
+              </li>
+              <li class="flex justify-between items-center border-b pb-4">
+                <span>Back Glass Replacement</span>
+                <span class="font-bold">₹300+</span>
+              </li>
+              <li class="flex justify-between items-center border-b pb-4">
+                <span>Camera Replacement</span>
+                <span class="font-bold">₹600+</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Advanced Repairs -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="bg-purple-600 text-white p-6 text-center">
+            <h3 class="text-2xl font-bold">Advanced Repairs</h3>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center border-b pb-4">
+                <span>Motherboard Repair</span>
+                <span class="font-bold">₹1500+</span>
+              </li>
+              <li class="flex justify-between items-center border-b pb-4">
+                <span>Water Damage Treatment</span>
+                <span class="font-bold">₹500+</span>
+              </li>
+             
+              <li class="flex justify-between items-center border-b pb-4">
+                <span>Network Issue Fix</span>
+                <span class="font-bold">₹800+</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center animate__animated animate__fadeIn">
+        <p class="text-gray-600 mb-6">* Prices may vary depending on device model and condition</p>
+        <a href="https://wa.me/9661838548" class="inline-flex items-center justify-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771z"/>
+          </svg>
+          Get Exact Quote on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="7908b213-ae26-4495-87dd-d3c8c5c52336" data-section-id="7908b213-ae26-4495-87dd-d3c8c5c52336">
+
+<htmlCode>
+<div id="root">
+  <section id="location" class="py-20 bg-neutral-900 text-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold mb-4">Our Location</h2>
+        <p class="text-gray-300 max-w-2xl mx-auto">Visit our store for professional mobile repair services</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Location Details -->
+        <div class="space-y-6 animate__animated animate__fadeInLeft">
+          <div class="bg-neutral-800 p-6 rounded-lg">
+            <h3 class="text-2xl font-bold mb-4">RICHA MOBILE REPAIRING BAKERGANJ</h3>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <svg class="w-6 h-6 text-blue-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                <p class="ml-4 text-gray-300">
+                  Old Priya Hotel Gali, Gola Road, Bakerganj<br>
+                  Patna 800004 <br>
+                  Bihar
+                
+                </p>
+              </div>
+
+              <div class="flex items-start">
+                <svg class="w-6 h-6 text-blue-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <div class="ml-4">
+                  <p class="text-gray-300">
+                    <span class="font-bold">Working Hours:</span><br>
+                    Monday - Saturday: 10:00 AM - 8:00 PM<br>
+                    Sunday: 11:00 AM - 7:00 PM
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <svg class="w-6 h-6 text-blue-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+                <div class="ml-4">
+                  <p class="text-gray-300">
+                    <span class="font-bold">Contact:</span><br>
+                    Phone: +91 96618 38548, +91 87093 05675 <br>
+                    Email: sujitkumar96617@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 flex space-x-4">
+              <a href="https://goo.gl/maps/[YOUR-MAPS-LINK]" target="_blank" class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                </svg>
+                Get Directions
+              </a>
+              <a href="https://wa.me/9661838548" target="_blank" class="inline-flex items-center justify-center px-6 py-3 bg-green-600 hover:bg-green-700 rounded-lg text-white transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771z"/>
+                </svg>
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-6 animate__animated animate__fadeInLeft">
+          <div class="bg-neutral-800 p-6 rounded-lg">
+            <h3 class="text-2xl font-bold mb-4">RICHA MOBILE REPAIRING JAGANPURA</h3>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <svg class="w-6 h-6 text-blue-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                <p class="ml-4 text-gray-300">
+                  Near Bypass Road, Jaganpura Road<br>
+                  Patna 800027 <br>
+                  Bihar
+                </p>
+              </div>
+
+              <div class="flex items-start">
+                <svg class="w-6 h-6 text-blue-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <div class="ml-4">
+                  <p class="text-gray-300">
+                    <span class="font-bold">Working Hours:</span><br>
+                    Monday - Saturday: 10:00 AM - 8:00 PM<br>
+                    Sunday: 11:00 AM - 8:00 PM
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <svg class="w-6 h-6 text-blue-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+                <div class="ml-4">
+                  <p class="text-gray-300">
+                    <span class="font-bold">Contact:</span><br>
+                    Phone: +91 96618 38548, +91 87093 05675<br>
+                    Phone: +91 62050 45018<br>
+                    Email: sujitkumar96617@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 flex space-x-4">
+              <a href="https://maps.app.goo.gl/XbdabaUyK1y6MLK8A" target="_blank" class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                </svg>
+                Get Directions
+              </a>
+              <a href="https://wa.me/9661838548" target="_blank" class="inline-flex items-center justify-center px-6 py-3 bg-green-600 hover:bg-green-700 rounded-lg text-white transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771z"/>
+                </svg>
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <!-- <div class="animate__animated animate__fadeInRight h-[400px] rounded-lg overflow-hidden">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=J48X+GX6" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            class="rounded-lg"
+          ></iframe>
+        </div> -->
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="ee73c6dc-7d64-4fdc-9705-db41614ebc1c" data-section-id="ee73c6dc-7d64-4fdc-9705-db41614ebc1c">
+
+<htmlCode>
+<div id="root">
+  <section id="testimonials" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold mb-4">Customer Reviews</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">See what our customers say about our services</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg animate__animated animate__fadeInUp">
+          <div class="flex items-center mb-4">
+            <div class="bg-blue-100 rounded-full p-3">
+              <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3v9zm-1.5-10.75A1.75 1.75 0 014.75 6.5 1.75 1.75 0 016.5 4.75 1.75 1.75 0 018.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+              </svg>
+            </div>
+            <div class="ml-4">
+              <h4 class="font-bold">Rahul Kumar</h4>
+              <div class="flex text-yellow-400">
+                ★★★★★
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">"Excellent service! They fixed my iPhone screen in just an hour. Very professional and reasonable pricing. Highly recommended!"</p>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="flex items-center mb-4">
+            <div class="bg-green-100 rounded-full p-3">
+              <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3v9zm-1.5-10.75A1.75 1.75 0 014.75 6.5 1.75 1.75 0 016.5 4.75 1.75 1.75 0 018.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+              </svg>
+            </div>
+            <div class="ml-4">
+              <h4 class="font-bold">Priya Sharma</h4>
+              <div class="flex text-yellow-400">
+                ★★★★★
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">"Great experience with battery replacement for my Samsung phone. Fast service and genuine parts used. Will definitely come back!"</p>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="flex items-center mb-4">
+            <div class="bg-purple-100 rounded-full p-3">
+              <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3v9zm-1.5-10.75A1.75 1.75 0 014.75 6.5 1.75 1.75 0 016.5 4.75 1.75 1.75 0 018.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+              </svg>
+            </div>
+            <div class="ml-4">
+              <h4 class="font-bold">Amit Patel</h4>
+              <div class="flex text-yellow-400">
+                ★★★★★
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">"Saved my water-damaged phone! The team is very knowledgeable and professional. Reasonable prices and excellent customer service."</p>
+        </div>
+      </div>
+
+      <!-- Review Stats -->
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="bg-neutral-100 p-6 rounded-lg animate__animated animate__fadeIn">
+          <div class="text-4xl font-bold text-blue-600 mb-2">30K+</div>
+          <div class="text-gray-600">Happy Customers</div>
+        </div>
+        <div class="bg-neutral-100 p-6 rounded-lg animate__animated animate__fadeIn animate__delay-1s">
+          <div class="text-4xl font-bold text-green-600 mb-2">4.5</div>
+          <div class="text-gray-600">Average Rating</div>
+        </div>
+        <div class="bg-neutral-100 p-6 rounded-lg animate__animated animate__fadeIn animate__delay-2s">
+          <div class="text-4xl font-bold text-purple-600 mb-2">10+</div>
+          <div class="text-gray-600">Years Experience</div>
+        </div>
+        <div class="bg-neutral-100 p-6 rounded-lg animate__animated animate__fadeIn animate__delay-3s">
+          <div class="text-4xl font-bold text-red-600 mb-2">50000+</div>
+          <div class="text-gray-600">Repairs Completed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="6cadffef-7e98-41de-a317-af7f2f3e94ee" data-section-id="6cadffef-7e98-41de-a317-af7f2f3e94ee">
+
+<htmlCode>
+<div id="root">
+  <section id="contact" class="py-20 bg-neutral-900">
+    <div class="container mx-auto px-4">
+      <div class="text-center text-white mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
+        <p class="text-gray-300 max-w-2xl mx-auto">Get in touch with us for quick mobile repair solutions</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div class="bg-neutral-800 p-8 rounded-lg shadow-xl animate__animated animate__fadeInLeft">
+          <form id="contactForm" class="space-y-6">
+            <div>
+              <label for="name" class="block text-white mb-2">Full Name</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                class="w-full px-4 py-3 rounded-lg bg-neutral-700 text-white border border-neutral-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none transition-colors"
+                required
+              >
+            </div>
+
+            <div>
+              <label for="phone" class="block text-white mb-2">Phone Number</label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                class="w-full px-4 py-3 rounded-lg bg-neutral-700 text-white border border-neutral-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none transition-colors"
+                required
+              >
+            </div>
+
+            <div>
+              <label for="device" class="block text-white mb-2">Device Model</label>
+              <input 
+                type="text" 
+                id="device" 
+                name="device" 
+                class="w-full px-4 py-3 rounded-lg bg-neutral-700 text-white border border-neutral-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none transition-colors"
+                required
+              >
+            </div>
+
+            <div>
+              <label for="issue" class="block text-white mb-2">Describe Your Issue</label>
+              <textarea 
+                id="issue" 
+                name="issue" 
+                rows="4" 
+                class="w-full px-4 py-3 rounded-lg bg-neutral-700 text-white border border-neutral-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none transition-colors"
+                required
+              ></textarea>
+            </div>
+
+            <button 
+              type="submit" 
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Quick Contact -->
+        <!-- <div class="space-y-8 animate__animated animate__fadeInRight">
+          <div class="bg-neutral-800 p-8 rounded-lg shadow-xl">
+            <h3 class="text-2xl font-bold text-white mb-6">Quick Contact</h3>
+            
+            <div class="space-y-6">
+              <div class="flex items-start text-white">
+                <svg class="w-6 h-6 text-blue-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                <div class="ml-4">
+                  <h4 class="font-bold mb-1">Address</h4>
+                  <p class="text-gray-300">Richa Mobile Repairing,Old Priya Holtel gali,Gola Road, Bakerganj, Patna-800004</p>
+                </div>
+              </div>
+
+              <div class="flex items-start text-white">
+                <svg class="w-6 h-6 text-blue-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+                <div class="ml-4">
+                  <h4 class="font-bold mb-1">Phone</h4>
+                  <p class="text-gray-300">+919661838548</p>
+                </div>
+              </div>
+
+              <div class="flex items-start text-white">
+                <svg class="w-6 h-6 text-blue-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <div class="ml-4">
+                  <h4 class="font-bold mb-1">Working Hours</h4>
+                  <p class="text-gray-300">
+                    Monday - Saturday: 10:00 AM - 8:00 PM<br>
+                    Sunday: 11:00 AM - 7:00 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 flex space-x-4">
+              <a 
+                href="https://wa.me/9661838548" 
+                class="flex-1 inline-flex items-center justify-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors"
+              >
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771z"/>
+                </svg>
+                WhatsApp
+              </a>
+              <a 
+                href="tel:+91 9661838548" 
+                class="flex-1 inline-flex items-center justify-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
+              >
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+                Call Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <script>
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Add your form submission logic here
+      alert('Thank you for contacting us! We will get back to you soon.');
+      contactForm.reset();
+    });
+  </script>
+</div>
+</htmlCode></element><element id="0bc40f6a-dec1-48a3-9d14-33f6b29ed057" data-section-id="0bc40f6a-dec1-48a3-9d14-33f6b29ed057">
+
+<htmlCode>
+<div id="root">
+  <footer id="footer" class="bg-neutral-900 text-white">
+    <div class="container mx-auto px-4">
+      <!-- Main Footer -->
+      <div class="pt-16 pb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Company Info -->
+        <div class="animate__animated animate__fadeIn">
+          <h3 class="text-2xl font-bold mb-4">RICHA MOBILE REPAIRING</h3>
+          <p class="text-gray-400 mb-4">Professional mobile phone repair services with guaranteed customer satisfaction.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="animate__animated animate__fadeIn">
+          <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+            <li><a href="#pricing" class="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
+            <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors">Reviews</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="animate__animated animate__fadeIn">
+          <h4 class="text-lg font-bold mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li class="text-gray-400">Screen Replacement</li>
+            <li class="text-gray-400">Battery Replacement</li>
+            <li class="text-gray-400">Water Damage Repair</li>
+            <li class="text-gray-400">Software Issues</li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="animate__animated animate__fadeIn">
+          <h4 class="text-lg font-bold mb-4">Contact Info</h4>
+          <ul class="space-y-2">
+            <li class="flex items-center text-gray-400">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              Richa Mobile Repairing,Old Priya Holtel gali,Gola Road, Bakerganj, Patna-800004<br>
+            </li>
+            <li class="flex items-center text-gray-400">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+              +91 8539873688
+            </li>
+            <li class="flex items-center text-gray-400">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              Mon-Sat: 10AM - 8PM
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="py-6 border-t border-neutral-800">
+        <div class="text-center text-gray-400 text-sm">
+          <p>&copy; 2024 RICHA MOBILE REPAIRING. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</htmlCode></element>
+            <div id="page_complete">
+            <script>
+                console.log('Page complete');
+            </script>
+            </body>
+            </html>
+          
